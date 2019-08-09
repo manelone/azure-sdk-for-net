@@ -711,10 +711,20 @@ namespace Microsoft.Azure.Batch.Common
         public const string DiskFull = "DiskFull";
 
         /// <summary>
+        /// Access was denied when trying to upload files to an output destination specified for the task.
+        /// </summary>
+        public const string FileUploadAccessDenied = "FileUploadAccessDenied";
+        
+        /// <summary>
+        /// Access was denied when trying to access a resource container required for the task.
+        /// </summary>
+        public const string ResourceContainerAccessDenied = "ResourceContainerAccessDenied";
+
+        /// <summary>
         /// The compute node could not create a directory for the task's resource files.
         /// </summary>
         public const string ResourceDirectoryCreateFailed = "ResourceDirectoryCreateFailed";
-
+        
         /// <summary>
         /// The compute node could not create a local file when trying to download a resource file required for the task.
         /// </summary>
